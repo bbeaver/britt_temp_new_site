@@ -6,10 +6,10 @@
   --paper: #fffdf8;
   --ink: #1c1915;
   --muted: #6b6459;
-  --accent: #2f4a3c;
-  --accent-hover: #243c31;
+  --accent: #2c4a6e;          /* was #2f4a3c (green) → deep blue */
+  --accent-hover: #223a58;    /* was #243c31 → darker blue */
   --accent-fg: #f6f1e8;
-  --forest: #1a2e26;
+  --forest: #1a2a3e;          /* was #1a2e26 → very dark blue (footer) */
   --rule: #d4c9b8;
   --rule-strong: #b9ad9a;
   --font-display: "Fraunces", "Iowan Old Style", Palatino, serif;

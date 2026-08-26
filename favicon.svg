@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <rect width="32" height="32" rx="16" fill="#2F4A3C"/>
-  <!-- Geometric CW: thick strokes, open counters, reads at 16px -->
+  <rect width="32" height="32" rx="16" fill="#2c4a6e"/>
+  <!-- Geometric BB: thick strokes, open counters, reads at 16px -->
   <path fill="none" stroke="#F6F1E8" stroke-width="3.3" stroke-linecap="round"
     d="M15.2 10.05 A7.15 7.15 0 1 0 15.2 21.95"/>
   <path fill="none" stroke="#F6F1E8" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="miter"

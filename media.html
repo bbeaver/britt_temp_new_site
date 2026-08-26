@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Media — Claire Whitmore</title>
+    <meta name="theme-color" content="#2F4A3C" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="page">
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="brand" href="index.html">
+          <img class="monogram" src="favicon.svg" alt="" />
+          <span>
+            <span class="brand-name"><em>Claire</em> Whitmore</span>
+            <span class="brand-role">Educator & Public Speaker</span>
+          </span>
+        </a>
+        <nav class="nav" aria-label="Primary">
+          <a href="index.html">Home</a>
+          <a href="about.html">About Me</a>
+          <a href="references.html">References</a>
+          <a href="media.html" aria-current="page">Media</a>
+          <a class="btn" href="mailto:hello@clairewhitmore.com?subject=Speaking inquiry">Book a talk</a>
+        </nav>
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-label="Open menu">Menu</button>
+      </div>
+      <nav class="mobile-nav wrap" data-mobile-nav aria-label="Mobile">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="references.html">References</a>
+        <a href="media.html" aria-current="page">Media</a>
+        <a class="btn" href="mailto:hello@clairewhitmore.com?subject=Speaking inquiry">Book a talk</a>
+      </nav>
+    </header>
+
+    <main class="wrap page-hero">
+      <p class="kicker">Media</p>
+      <h1>Audio and media, kept in one library</h1>
+      <p class="muted" style="max-width: 40rem">
+        Recordings, photographs, and clips live in a Google Drive folder with two subfolders: Audio
+        and Media. Open the library to listen, download, or share with a host.
+      </p>
+
+      <div class="media-grid">
+        <!-- Both cards open the same parent Drive folder. Replace DRIVE_URL below. -->
+        <a class="card" id="audio-link" href="https://drive.google.com/drive/folders/YOUR_FOLDER_ID" target="_blank" rel="noreferrer">
+          <p class="kicker">Subfolder</p>
+          <h2>Audio</h2>
+          <p class="muted">
+            Keynotes, interviews, and workshop excerpts. Useful for event pages and for hosts who
+            want to hear the room before they book.
+          </p>
+        </a>
+        <a class="card" id="media-link" href="https://drive.google.com/drive/folders/YOUR_FOLDER_ID" target="_blank" rel="noreferrer">
+          <p class="kicker">Subfolder</p>
+          <h2>Media</h2>
+          <p class="muted">
+            Photographs, short video, and press stills. High-resolution files for programs, websites,
+            and day-of screens.
+          </p>
+        </a>
+      </div>
+
+      <div class="cta-band">
+        <div>
+          <p class="kicker" style="color: color-mix(in oklab, var(--accent-fg) 65%, transparent)">Google Drive</p>
+          <h2>Open the full library</h2>
+          <p>
+            Create a Drive folder named for your speaking work, add Audio and Media subfolders, share
+            it with “anyone with the link,” then paste the URL in the two cards above and the button
+            below.
+          </p>
+        </div>
+        <a class="btn btn-inverse" id="drive-button" href="https://drive.google.com/drive/folders/YOUR_FOLDER_ID" target="_blank" rel="noreferrer">
+          Open Google Drive
+        </a>
+      </div>
+
+      <ol class="steps">
+        <li>
+          <p class="num">01</p>
+          <h3>Create the folder</h3>
+          <p class="muted">In Google Drive, make a folder. Inside it, add two subfolders: Audio and Media.</p>
+        </li>
+        <li>
+          <p class="num">02</p>
+          <h3>Share the link</h3>
+          <p class="muted">Right-click the parent folder → Share → Anyone with the link → Viewer. Copy the link.</p>
+        </li>
+        <li>
+          <p class="num">03</p>
+          <h3>Paste it here</h3>
+          <p class="muted">Replace YOUR_FOLDER_ID in this file (three places) with your folder URL.</p>
+        </li>
+      </ol>
+    </main>
+
+    <footer class="site-footer" style="margin-top: 4rem">
+      <div class="wrap footer-grid">
+        <div>
+          <p class="brand-name"><em>Claire</em> Whitmore</p>
+          <p class="footer-label">Educator & Public Speaker</p>
+        </div>
+        <div>
+          <p class="footer-label">On this site</p>
+          <p><a href="index.html">Home</a></p>
+          <p><a href="about.html">About Me</a></p>
+          <p><a href="references.html">References</a></p>
+          <p><a href="media.html">Media</a></p>
+        </div>
+        <div>
+          <p class="footer-label">Inquiries</p>
+          <p><a href="mailto:hello@clairewhitmore.com">hello@clairewhitmore.com</a></p>
+        </div>
+      </div>
+      <p class="wrap footer-copy">© 2026 Claire Whitmore. All rights reserved.</p>
+    </footer>
+    <script src="js/site.js"></script>
+  </body>
+</html>

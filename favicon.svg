@@ -1,20 +1,21 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <rect width="32" height="32" rx="16" fill="#2c4a6e"></rect>
-  
-  
-  <path fill="none" stroke="#F6F1E8" stroke-width="2.9" stroke-linecap="round" stroke-linejoin="round" d="M6.35 9.4 L6.35 22.6
-       M6.35 9.4 L12.65 9.4
-       A3.3 3.3 0 0 1 12.65 16.0
-       L6.35 16.0
-       M6.35 16.0 L12.65 16.0
-       A3.3 3.3 0 0 1 12.65 22.6
-       L6.35 22.6"></path>
-  
-  <path fill="none" stroke="#F6F1E8" stroke-width="2.9" stroke-linecap="round" stroke-linejoin="round" d="M19.35 9.4 L19.35 22.6
-       M19.35 9.4 L25.65 9.4
-       A3.3 3.3 0 0 1 25.65 16.0
-       L19.35 16.0
-       M19.35 16.0 L25.65 16.0
-       A3.3 3.3 0 0 1 25.65 22.6
-       L19.35 22.6"></path>
+  <rect width="32" height="32" rx="16" fill="#2c4a6e"/>
+  <!-- Left B – classic proportions + properly centered -->
+  <path fill="none" stroke="#F6F1E8" stroke-width="2.9" stroke-linecap="round" stroke-linejoin="round"
+        d="M5.0 9.3 L5.0 22.7
+           M5.0 9.3 L11.8 9.3
+           A2.7 2.7 0 0 1 11.8 14.7
+           L5.0 14.7
+           M5.0 14.7 L10.5 14.7
+           A4.0 4.0 0 0 1 10.5 22.7
+           L5.0 22.7"/>
+  <!-- Right B – matching -->
+  <path fill="none" stroke="#F6F1E8" stroke-width="2.9" stroke-linecap="round" stroke-linejoin="round"
+        d="M17.5 9.3 L17.5 22.7
+           M17.5 9.3 L24.3 9.3
+           A2.7 2.7 0 0 1 24.3 14.7
+           L17.5 14.7
+           M17.5 14.7 L23.0 14.7
+           A4.0 4.0 0 0 1 23.0 22.7
+           L17.5 22.7"/>
 </svg>

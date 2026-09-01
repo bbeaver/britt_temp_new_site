@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -8,302 +7,137 @@
     <meta name="theme-color" content="#2F4A3C" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
 
-```
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link
-  href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,0..9,400;1,0..9,500&display=swap"
-  rel="stylesheet"
-/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
 
-<link rel="stylesheet" href="css/style.css" />
+    <style>
+      .password-box {
+        max-width: 32rem;
+        margin: 2rem auto 4rem;
+        padding: 2.5rem;
+        text-align: center;
+      }
 
-<style>
-  .password-box {
-    max-width: 32rem;
-    margin: 2rem auto 4rem;
-    padding: 2.5rem;
-    text-align: center;
-  }
+      .access-links {
+        display: grid;
+        gap: 1rem;
+        max-width: 32rem;
+        margin: 1.5rem auto 0;
+      }
 
-  .password-box input[type="password"] {
-    width: 100%;
-    max-width: 20rem;
-    box-sizing: border-box;
-    padding: 0.8rem 1rem;
-    margin-top: 0.5rem;
-    font: inherit;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-
-  .password-box button {
-    margin-top: 1rem;
-    padding: 0.8rem 1.5rem;
-    font: inherit;
-    font-weight: 600;
-    cursor: pointer;
-  }
-
-  #error-message {
-    display: none;
-    margin-top: 1rem;
-    color: #a33;
-  }
-
-  #protected-content {
-    display: none;
-    margin-top: 2.5rem;
-  }
-
-  .access-links {
-    display: grid;
-    gap: 1rem;
-    max-width: 32rem;
-    margin: 1.5rem auto 0;
-  }
-
-  .access-links a {
-    display: block;
-    padding: 1rem 1.5rem;
-    text-align: center;
-    text-decoration: none;
-  }
-</style>
-```
-
+      .access-links a {
+        display: block;
+        padding: 1rem 1.5rem;
+        text-align: center;
+        text-decoration: none;
+      }
+    </style>
   </head>
 
   <body class="page">
-
-```
-<header class="site-header">
-  <div class="wrap header-inner">
-    <a class="brand" href="index.html">
-      <img class="monogram" src="favicon.svg" alt="" />
-      <span>
-        <span class="brand-name"><em>Britt</em> Beaver</span>
-        <span class="brand-role">Educator & Public Speaker</span>
-      </span>
-    </a>
-
-    <nav class="nav" aria-label="Primary">
-      <a href="index.html">Home</a>
-      <a href="about.html">About Me</a>
-      <a href="references.html">References</a>
-      <a href="media.html">Media</a>
-      <a class="btn" href="mailto:brittbeaverevents@gmail.com?subject=Speaking inquiry">Book a talk</a>
-    </nav>
-
-    <button
-      class="menu-toggle"
-      type="button"
-      data-menu-toggle
-      aria-expanded="false"
-      aria-label="Open menu"
-    >
-      Menu
-    </button>
-  </div>
-
-  <nav class="mobile-nav wrap" data-mobile-nav aria-label="Mobile">
-    <a href="index.html">Home</a>
-    <a href="about.html">About Me</a>
-    <a href="references.html">References</a>
-    <a href="media.html">Media</a>
-    <a class="btn" href="mailto:brittbeaverevents@gmail.com?subject=Speaking inquiry">Book a talk</a>
-  </nav>
-</header>
-
-
-<main class="wrap page-hero">
-
-  <p class="kicker">Protected</p>
-
-  <h1>Media Library</h1>
-
-  <div class="password-box">
-
-    <p class="muted">
-      This content is password-protected. To view the media library,
-      please enter the password below.
-    </p>
-
-    <form id="password-form">
-
-      <label for="password">
-        <strong>Password:</strong>
-      </label>
-
-      <br />
-
-      <input
-        type="password"
-        id="password"
-        autocomplete="off"
-        required
-      />
-
-      <br />
-
-      <button type="submit">Enter</button>
-
-    </form>
-
-    <p id="error-message">
-      Incorrect password. Please try again.
-    </p>
-
-
-    <div id="protected-content">
-
-      <p>
-        <strong>Access granted.</strong>
-      </p>
-
-      <p class="muted">
-        Choose the library you would like to access:
-      </p>
-
-      <div class="access-links">
-
-        <a
-          id="audio-link"
-          class="btn"
-          href="#"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Audio Library
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="brand" href="index.html">
+          <img class="monogram" src="favicon.svg" alt="" />
+          <span>
+            <span class="brand-name"><em>Britt</em> Beaver</span>
+            <span class="brand-role">Educator & Public Speaker</span>
+          </span>
         </a>
-
-        <a
-          id="media-link"
-          class="btn"
-          href="#"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Media Library
-        </a>
-
+        <nav class="nav" aria-label="Primary">
+          <a href="index.html">Home</a>
+          <a href="about.html">About Me</a>
+          <a href="references.html">References</a>
+          <a href="media.html">Media</a>
+          <a class="btn" href="mailto:brittbeaverevents@gmail.com?subject=Speaking inquiry">Book a talk</a>
+        </nav>
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-label="Open menu">Menu</button>
       </div>
+      <nav class="mobile-nav wrap" data-mobile-nav aria-label="Mobile">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="references.html">References</a>
+        <a href="media.html">Media</a>
+        <a class="btn" href="mailto:brittbeaverevents@gmail.com?subject=Speaking inquiry">Book a talk</a>
+      </nav>
+    </header>
 
-    </div>
+    <main class="wrap page-hero">
+      <p class="kicker">Protected</p>
+      <h1>Media Library</h1>
 
-  </div>
+      <div class="password-box">
+        <p class="muted">
+          The audio and media libraries are available to event hosts and partners on request.
+        </p>
 
-</main>
+        <p>
+          Please email
+          <a href="mailto:brittbeaverevents@gmail.com?subject=Media%20library%20access">
+            brittbeaverevents@gmail.com
+          </a>
+          and I’ll send you the links.
+        </p>
 
+        <div class="access-links">
+          <a
+            class="btn"
+            href="mailto:brittbeaverevents@gmail.com?subject=Audio%20library%20access"
+          >
+            Request Audio Library
+          </a>
+          <a
+            class="btn"
+            href="mailto:brittbeaverevents@gmail.com?subject=Media%20library%20access"
+          >
+            Request Media Library
+          </a>
+        </div>
+      </div>
+    </main>
 
-<footer class="site-footer" style="margin-top: 4rem">
-  <div class="wrap footer-grid">
+    <footer class="site-footer" style="margin-top: 4rem">
+      <div class="wrap footer-grid">
+        <div>
+          <p class="brand-name"><em>Britt</em> Beaver</p>
+          <p class="footer-label">Educator & Public Speaker</p>
+        </div>
+        <div>
+          <p class="footer-label">On this site</p>
+          <p><a href="index.html">Home</a></p>
+          <p><a href="about.html">About Me</a></p>
+          <p><a href="references.html">References</a></p>
+          <p><a href="media.html">Media</a></p>
+        </div>
+        <div>
+          <p class="footer-label">Inquiries</p>
+          <p>
+            <a href="mailto:brittbeaverevents@gmail.com">brittbeaverevents@gmail.com</a>
+          </p>
+          <p>
+            <a
+              class="fb-link"
+              href="https://www.facebook.com/profile.php?id=61593697610856"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="facebook_icon.png" alt="Facebook" width="22" height="22" />
+              Facebook
+            </a>
+          </p>
+          <p>
+            <a href="flyer.pdf" target="_blank" rel="noopener noreferrer">Flyer</a>
+          </p>
+        </div>
+      </div>
+      <p class="wrap footer-copy">© 2026 Britt Beaver. All rights reserved.</p>
+    </footer>
 
-    <div>
-      <p class="brand-name"><em>Britt</em> Beaver</p>
-      <p class="footer-label">Educator & Public Speaker</p>
-    </div>
-
-    <div>
-      <p class="footer-label">On this site</p>
-      <p><a href="index.html">Home</a></p>
-      <p><a href="about.html">About Me</a></p>
-      <p><a href="references.html">References</a></p>
-      <p><a href="media.html">Media</a></p>
-    </div>
-
-    <div>
-      <p class="footer-label">Inquiries</p>
-      <p>
-        <a href="mailto:brittbeaverevents@gmail.com">
-          brittbeaverevents@gmail.com
-        </a>
-      </p>
-
-      <p>
-        <a
-          class="fb-link"
-          href="https://www.facebook.com/profile.php?id=61593697610856"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img
-            src="facebook_icon.png"
-            alt="Facebook"
-            width="22"
-            height="22"
-          />
-          Facebook
-        </a>
-      </p>
-
-      <p>
-        <a href="flyer.pdf" target="_blank" rel="noopener noreferrer">
-          Flyer
-        </a>
-      </p>
-
-    </div>
-
-  </div>
-
-  <p class="wrap footer-copy">
-    © 2026 Britt Beaver. All rights reserved.
-  </p>
-
-</footer>
-
-
-<script src="js/site.js"></script>
-
-
-<script>
-  document.getElementById("password-form").addEventListener("submit", function(event) {
-
-    event.preventDefault();
-
-    // ============================================================
-    // CHANGE THIS TO YOUR PASSWORD
-    // ============================================================
-    const correctPassword = "P4ssW0rd!";
-
-
-    // ============================================================
-    // YOUR GOOGLE DRIVE FOLDER LINKS
-    // ============================================================
-    const audioFolder =
-      "https://drive.google.com/drive/folders/1WvCpLxxMZmNW_zvIDsezf7jW8ou-bxVR?usp=drive_link";
-
-    const mediaFolder =
-      "https://drive.google.com/drive/folders/1VEiTHuO1A2t_WUnlhbJhlBKt6XAHoBCS?usp=drive_link";
-
-
-    const enteredPassword =
-      document.getElementById("password").value;
-
-
-    if (enteredPassword === correctPassword) {
-
-      document.getElementById("error-message").style.display = "none";
-
-      document.getElementById("protected-content").style.display = "block";
-
-      document.getElementById("audio-link").href = audioFolder;
-
-      document.getElementById("media-link").href = mediaFolder;
-
-    } else {
-
-      document.getElementById("error-message").style.display = "block";
-
-      document.getElementById("protected-content").style.display = "none";
-
-    }
-
-  });
-</script>
-```
-
+    <script src="js/site.js"></script>
   </body>
 </html>
-
